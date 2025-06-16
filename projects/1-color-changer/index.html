@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Scheme Switcher</title>
+  <link rel="stylesheet" href="src/output.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-6">
+
+  <!-- Centered Heading -->
+  <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">
+    Color Scheme Switcher
+  </h1>
+
+  <!-- Hoverable Clickable Boxes -->
+  <div class="flex flex-wrap gap-4 justify-center mb-10">
+    <button class="w-32 h-32 bg-red-400 rounded-lg shadow-md transform transition hover:scale-105 hover:shadow-lg focus:outline-none" id="red"></button>
+    <button class="w-32 h-32 bg-blue-400 rounded-lg shadow-md transform transition hover:scale-105 hover:shadow-lg focus:outline-none" id="blue"></button>
+    <button class="w-32 h-32 bg-green-400 rounded-lg shadow-md transform transition hover:scale-105 hover:shadow-lg focus:outline-none" id="green"></button>
+    <button class="w-32 h-32 bg-yellow-400 rounded-lg shadow-md transform transition hover:scale-105 hover:shadow-lg focus:outline-none" id="yellow"></button>
+    <button class="w-32 h-32 bg-purple-400 rounded-lg shadow-md transform transition hover:scale-105 hover:shadow-lg focus:outline-none" id="purple"></button>
+  </div>
+
+  <!-- Note Type Heading -->
+  <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 w-full max-w-xl rounded">
+    <p class="font-semibold">Note:</p>
+    <p>Try clicking on one of the colors above to change the background color of this page</p>
+  </div>
+
+</body>
+</html>
