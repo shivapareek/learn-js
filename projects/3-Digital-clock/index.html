@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Local Time Display</title>
+  <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen text-white p-6">
+
+  <div class="bg-gray-800 rounded-2xl shadow-xl p-8 w-full max-w-md text-center">
+    
+    <!-- Static Text -->
+    <h2 class="text-xl font-semibold text-gray-300 mb-4">
+      Your local time is
+    </h2>
+
+    <!-- Time Container -->
+    <div id="timeBox"
+      class="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-3xl font-bold py-4 rounded-xl shadow-inner">
+      <!-- Time will be injected here -->
+    </div>
+
+  </div>
+
+  <script>
+    const clock = document.querySelector('#timeBox')
+
+    setInterval(function (){
+     let date = new Date();
+    //  console.log(date.toLocaleTimeString());
+     
+     clock.innerHTML = date.toLocaleTimeString();
+    },1000);
+    
+  </script>
+
+
+</body>
+</html>
