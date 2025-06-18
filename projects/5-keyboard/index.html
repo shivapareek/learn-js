@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Key Display</title>
+  <link rel="stylesheet" href="src/output.css">
+  <style>
+    ::selection {
+      background: #a78bfa;
+      color: white;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center h-screen bg-gradient-to-br from-blue-100 to-purple-200 text-gray-800">
+
+  <div class="bg-white/60 backdrop-blur-lg p-10 rounded-3xl shadow-2xl text-center max-w-md w-full">
+    <h2 class="text-2xl font-semibold mb-6">Press any key to show</h2>
+    
+    <div id="output" class="h-24 flex items-center justify-center text-4xl font-bold text-purple-600 bg-white rounded-xl shadow-inner border border-purple-300 transition-all duration-200">
+      <!-- Key will appear here -->
+    </div>
+  </div>
+
+  <script>
+    const output = document.getElementById('output');
+
+    window.addEventListener('keydown', (e) => {
+      output.textContent = e.key === ' ' ? 'Space' : e.key;
+    });
+  </script>
+</body>
+</html>
