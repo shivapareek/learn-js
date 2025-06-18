@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: #414141;">
+    <h2>Amazing Images</h2>
+    <div>
+    <ul id="images">
+        <li><img width="200px" src="https://images.pexels.com/photos/29421579/pexels-photo-29421579.jpeg" alt="mela" id="mela"></li>
+        <li><img width="200px" src="https://images.pexels.com/photos/29421578/pexels-photo-29421578.jpeg" alt="mountain" id="mountain"></li>
+        <li><img width="200px" src="https://images.pexels.com/photos/29421577/pexels-photo-29421577.jpeg" alt="boat" id="boat"></li>
+        <li><img width="200px" src="https://images.pexels.com/photos/18681383/pexels-photo-18681383.jpeg" alt="coding" id="coding"></li>
+        <li><img width="200px" src="https://images.pexels.com/photos/18148936/pexels-photo-18148936.jpeg" alt="view" id="view"></li>
+        <li><img width="200px" src="https://images.pexels.com/photos/18148933/pexels-photo-18148933.jpeg" alt="sabjiwala" id="sabjiwala"></li>
+        <li><a href="https://google.com" id="google" style="color: aliceblue;">Google</a></li>
+    </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('boat').onclick = function(){
+    //     alert("boat click")
+    // }
+
+    //attachEvent()
+    //jQuery - on 
+
+    //type , timestamp , preventdefault 
+    // target , toElement , srcElement , currentTarget
+    //clientX , clientY , screenX , screenY
+    //altkey , ctrlkey , shiftkey ,keyCode
+
+
+    //bubbling event
+    // document.getElementById('images').addEventListener('click' , function (e){
+    //     console.log("Click indide the ul");
+        
+    // },false)
+    // document.getElementById('boat').addEventListener('click' , function (e){
+    //     console.log("boat clicked");
+    //     e.stopPropagation()
+        
+    // },false)
+
+    //capturing event
+    // document.getElementById('images').addEventListener('click' , function (e){
+    //     console.log("Click indide the ul");
+        
+    // },true)
+    // document.getElementById('boat').addEventListener('click' , function (e){
+    //     console.log("boat clicked");
+        
+    // },true)
+
+    // document.getElementById('google').addEventListener('click' , function (e){
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+        
+    // })
+
+    // document.getElementById('images').addEventListener('click' , function (e){
+    //     console.log(e.target.parentNode);
+    //     if(e.target.tagName === 'IMG'){
+    //     let removeIt = e.target.parentNode
+    //     removeIt.remove()
+    //     }
+        
+    // })
+    // removeIt.parentNode.removeChild(removeIt)
+
+    // document.getElementById('images').addEventListener('click' , function (e){
+    //     console.log(e.srcElement);
+    // })
+
+</script>
+</html>
